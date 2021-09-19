@@ -97,3 +97,22 @@
 #### Delete a comment by id
 * http://localhost:3001/api/comments/cbb7d2d7-0fce-4d53-bb26-abf6e986bc62
 * DELETE REQUEST
+
+
+
+
+
+mysql://
+badbf1d919d55a
+:
+ba97f0d2
+@
+us-cdbr-east-04.cleardb.com
+/heroku_5f9189dc0cd84e8?reconnect=true
+
+
+Server: sql5.freemysqlhosting.net
+Name: sql5438481
+Username: sql5438481
+Password: z6uESRT92L
+Port number: 3306

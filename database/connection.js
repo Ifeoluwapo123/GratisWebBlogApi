@@ -1,17 +1,22 @@
 const Sequelize = require("sequelize");
 
-const sequelize = new Sequelize("blogDb", "root", "mysqlroot", {
-  host: process.env.DATABASE_HOST,
-  dialect: process.env.DATABASE_DIALECT,
-  port: process.env.DATABASE_PORT,
-  protocol: null,
-  logging: false,
-  pool: {
-    max: 5,
-    idle: 30000,
-    acquire: 60000,
-  },
-});
+const sequelize = new Sequelize(
+  process.env.DATABASE_REMOTE_NAME,
+  process.env.DATABASE_REMOTE_USERNAME,
+  process.env.DATABASE_REMOTE_PASSWORD,
+  {
+    host: process.env.DATABASE_REMOTE_HOST,
+    dialect: process.env.DATABASE_DIALECT,
+    port: process.env.DATABASE_PORT,
+    protocol: null,
+    logging: false,
+    pool: {
+      max: 5,
+      idle: 30000,
+      acquire: 60000,
+    },
+  }
+);
 
 sequelize
   .authenticate()
