@@ -29,7 +29,7 @@
 
 
 #### Get a blog post by id
-* https://gratis-blogsite.herokuapp.com/api/posts/89817983-6067-4799-be0d-529a4d87b426
+* https://gratis-blogsite.herokuapp.com/api/posts/64efe8c1-34d3-4dbd-91e3-793fa1af8e17
 * GET REQUEST
 
 
@@ -44,7 +44,7 @@
 
 
 #### Update a blog posts
-* https://gratis-blogsite.herokuapp.com/api/posts/89817983-6067-4799-be0d-529a4d87b426
+* https://gratis-blogsite.herokuapp.com/api/posts/64efe8c1-34d3-4dbd-91e3-793fa1af8e17
 * PUT REQUEST
 * Request Body
 * {
@@ -54,7 +54,7 @@
 
 
 #### Delete a blog posts
-* https://gratis-blogsite.herokuapp.com/api/posts/89817983-6067-4799-be0d-529a4d87b426
+* https://gratis-blogsite.herokuapp.com/api/posts/64efe8c1-34d3-4dbd-91e3-793fa1af8e17
 * DELETE REQUEST
 
 
@@ -71,7 +71,7 @@
 * Request Body 
 * {
 *    "comment": "coooooooooool",
-*    "postId": "de96fccd-866c-40d8-b35c-2fed3bfe84fd"
+*    "postId": "64efe8c1-34d3-4dbd-91e3-793fa1af8e17"
 * }
 
 
@@ -81,12 +81,12 @@
 
 
 #### Get a comment by id
-* https://gratis-blogsite.herokuapp.com/api/comments/8a88e739-c841-482b-a5dd-6008862fea31
+* https://gratis-blogsite.herokuapp.com/api/comments/8622d6f4-5b25-4a3a-b3ac-b3a4fc715e47
 * GET REQUEST
 
 
 #### update a comment 
-* https://gratis-blogsite.herokuapp.com/api/comments/cbb7d2d7-0fce-4d53-bb26-abf6e986bc62
+* https://gratis-blogsite.herokuapp.com/api/comments/8622d6f4-5b25-4a3a-b3ac-b3a4fc715e47
 *  UPDATE REQUEST
 * Request Body
 * {
@@ -95,5 +95,5 @@
 
 
 #### Delete a comment by id
-* https://gratis-blogsite.herokuapp.com/api/comments/cbb7d2d7-0fce-4d53-bb26-abf6e986bc62
+* https://gratis-blogsite.herokuapp.com/api/comments/8622d6f4-5b25-4a3a-b3ac-b3a4fc715e47
 * DELETE REQUEST
