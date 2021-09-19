@@ -87,7 +87,7 @@
 
 #### update a comment 
 * https://gratis-blogsite.herokuapp.com/api/comments/8622d6f4-5b25-4a3a-b3ac-b3a4fc715e47
-*  UPDATE REQUEST
+*  PUT REQUEST
 * Request Body
 * {
 *    "comment": "Yesrrrr"
