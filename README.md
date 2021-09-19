@@ -19,22 +19,22 @@
 ### All api end points
 
 #### Get all blog posts
-* http://localhost:3001/api/posts
+* https://gratis-blogsite.herokuapp.com/api/posts
 * GET REQUEST
 
 
 #### Get all blog posts
-* http://localhost:3001/api/posts
+* https://gratis-blogsite.herokuapp.com/api/posts
 * GET REQUEST
 
 
 #### Get a blog post by id
-* http://localhost:3001/api/posts/89817983-6067-4799-be0d-529a4d87b426
+* https://gratis-blogsite.herokuapp.com/api/posts/89817983-6067-4799-be0d-529a4d87b426
 * GET REQUEST
 
 
 #### Create a blog post
-* http://localhost:3001/api/posts
+* https://gratis-blogsite.herokuapp.com/api/posts
 * POST REQUEST
 * Request Body 
 {
@@ -44,7 +44,7 @@
 
 
 #### Update a blog posts
-* http://localhost:3001/api/posts/89817983-6067-4799-be0d-529a4d87b426
+* https://gratis-blogsite.herokuapp.com/api/posts/89817983-6067-4799-be0d-529a4d87b426
 * PUT REQUEST
 * Request Body
 * {
@@ -54,19 +54,19 @@
 
 
 #### Delete a blog posts
-* http://localhost:3001/api/posts/89817983-6067-4799-be0d-529a4d87b426
+* https://gratis-blogsite.herokuapp.com/api/posts/89817983-6067-4799-be0d-529a4d87b426
 * DELETE REQUEST
 
 
 ### Pagination
-* http://localhost:3001/api/posts/pg?page=1&size=1
+* https://gratis-blogsite.herokuapp.com/api/posts/pg?page=1&size=1
 * page attribute for page number starting from one
 * size attribute for number of data per page
 * GET REQUEST
 
 
 #### Create Comment
-* http://localhost:3001/api/comments
+* https://gratis-blogsite.herokuapp.com/api/comments
 * POST REQUEST
 * Request Body 
 * {
@@ -76,17 +76,17 @@
 
 
 #### Get all comments
-* http://localhost:3001/api/comments
+* https://gratis-blogsite.herokuapp.com/api/comments
 * GET REQUEST
 
 
 #### Get a comment by id
-* http://localhost:3001/api/comments/8a88e739-c841-482b-a5dd-6008862fea31
+* https://gratis-blogsite.herokuapp.com/api/comments/8a88e739-c841-482b-a5dd-6008862fea31
 * GET REQUEST
 
 
 #### update a comment 
-* http://localhost:3001/api/comments/cbb7d2d7-0fce-4d53-bb26-abf6e986bc62
+* https://gratis-blogsite.herokuapp.com/api/comments/cbb7d2d7-0fce-4d53-bb26-abf6e986bc62
 *  UPDATE REQUEST
 * Request Body
 * {
@@ -95,24 +95,5 @@
 
 
 #### Delete a comment by id
-* http://localhost:3001/api/comments/cbb7d2d7-0fce-4d53-bb26-abf6e986bc62
+* https://gratis-blogsite.herokuapp.com/api/comments/cbb7d2d7-0fce-4d53-bb26-abf6e986bc62
 * DELETE REQUEST
-
-
-
-
-
-mysql://
-badbf1d919d55a
-:
-ba97f0d2
-@
-us-cdbr-east-04.cleardb.com
-/heroku_5f9189dc0cd84e8?reconnect=true
-
-
-Server: sql5.freemysqlhosting.net
-Name: sql5438481
-Username: sql5438481
-Password: z6uESRT92L
-Port number: 3306
