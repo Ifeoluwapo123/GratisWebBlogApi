@@ -7,7 +7,7 @@
 
 ### Create a .env file and insert the following
 
-#### local daatabase configuration
+#### local database configuration
 * DATABASE_HOST=localhost
 * DATABASE_DIALECT=mysql
 * DATABASE_USERNAME=root
@@ -19,7 +19,7 @@
 * DATABASE_REMOTE_USERNAME=your-remote-database-username
 * DATABASE_REMOTE_NAME=your-remote-database-name
 
-#### remote daatabase configuration
+#### remote database configuration
 DATABASE_HOST=localhost
 DATABASE_DIALECT=mysql
 DATABASE_USERNAME=root
