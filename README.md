@@ -6,9 +6,30 @@
 * To install all dependencies for the project to start working
 
 ### Create a .env file and insert the following
+
+#### local daatabase configuration
 * DATABASE_HOST=localhost
 * DATABASE_DIALECT=mysql
+* DATABASE_USERNAME=root
 * DATABASE_PORT=3306
+* DATABASE_PASSWORD=your-database-password
+* DATABASE_NAME=your-database-name
+* DATABASE_REMOTE_HOST=your-remote-database-host
+* DATABASE_REMOTE_PASSWORD=your-remote-database-password
+* DATABASE_REMOTE_USERNAME=your-remote-database-username
+* DATABASE_REMOTE_NAME=your-remote-database-name
+
+#### remote daatabase configuration
+DATABASE_HOST=localhost
+DATABASE_DIALECT=mysql
+DATABASE_USERNAME=root
+DATABASE_PASSWORD=mysqlroot
+DATABASE_PORT=3306
+DATABASE_NAME=blogDb
+DATABASE_REMOTE_HOST=sql5.freemysqlhosting.net
+DATABASE_REMOTE_PASSWORD=z6uESRT92L
+DATABASE_REMOTE_USERNAME=sql5438481
+DATABASE_REMOTE_NAME=sql5438481
 
 ### Run "npm run dev" or "npm start" 
 * Run "npm run dev" or "npm start" in your terminal to start the project
