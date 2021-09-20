@@ -27,7 +27,7 @@ exports.create = (req, res) => {
 // Retrieve all blog posts from the database.
 exports.findAll = (req, res) => {
   Post.findAll().then((posts) => {
-    res.json({ posts: posts });
+    res.status(200).json({ posts: posts });
   });
 };
 
@@ -37,8 +37,7 @@ exports.findOne = (req, res) => {
 
   Post.findByPk(uuid)
     .then((data) => {
-      console.log(data);
-      res.json({ user: data ? "anonymous" : "", post: data || {} });
+      res.status(200).json({ user: data ? "anonymous" : "", post: data || {} });
     })
     .catch((err) => {
       res.status(500).send({
@@ -55,9 +54,8 @@ exports.update = (req, res) => {
     where: { postId: uuid },
   })
     .then((num) => {
-      console.log(num);
       if (num == 1) {
-        res.send({
+        res.status(201).send({
           message: "blog post was updated successfully.",
         });
       } else {
@@ -83,7 +81,7 @@ exports.delete = (req, res) => {
   })
     .then((num) => {
       if (num == 1) {
-        res.send({
+        res.status(201).send({
           message: "blog post was deleted successfully!",
         });
         Comment.destroy({ where: { postId: uuid } });
@@ -109,7 +107,7 @@ exports.findAllByPage = (req, res) => {
   Post.findAndCountAll({ limit, offset })
     .then((data) => {
       const response = getPagingData(data, page, limit);
-      res.send(response);
+      res.status(200).json(response);
     })
     .catch((err) => {
       res.status(500).send({

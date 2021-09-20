@@ -12,7 +12,7 @@ exports.create = (req, res) => {
   // Save comment in the database
   Comment.create(comment)
     .then((data) => {
-      res.json(data);
+      res.status(201).json(data);
     })
     .catch((err) => {
       res.status(500).send({
@@ -26,19 +26,16 @@ exports.create = (req, res) => {
 // Retrieve all comments on a blog posts from the database.
 exports.findAll = (req, res) => {
   Comment.findAll().then((comments) => {
-    res.json({ comments: comments });
+    res.status(200).json({ comments: comments });
   });
 };
 
 exports.findOne = (req, res) => {
   const uuid = req.params.id;
 
-  if (uuid.length !== 36)
-    return res.redirect(req.protocol + "://" + req.get("host"));
-
   Comment.findByPk(uuid)
     .then((data) => {
-      res.json({ comment: data || {} });
+      res.status(200).json({ comment: data || {} });
     })
     .catch((err) => {
       res.status(500).send({
@@ -51,19 +48,16 @@ exports.findOne = (req, res) => {
 exports.update = (req, res) => {
   const uuid = req.params.id;
 
-  if (uuid.length !== 36)
-    return res.redirect(req.protocol + "://" + req.get("host"));
-
   Comment.update(req.body, {
     where: { commentId: uuid },
   })
     .then((num) => {
       if (num == 1) {
-        res.send({
+        res.status(201).send({
           message: "comment was updated successfully.",
         });
       } else {
-        res.send({
+        res.status(404).send({
           message: `Cannot update comment with id=${uuid}. Maybe post was not found or req.body is empty!`,
         });
       }
@@ -80,19 +74,16 @@ exports.update = (req, res) => {
 exports.delete = (req, res) => {
   const uuid = req.params.id;
 
-  if (uuid.length !== 36)
-    return res.redirect(req.protocol + "://" + req.get("host"));
-
   Comment.destroy({
     where: { commentId: uuid },
   })
     .then((num) => {
       if (num == 1) {
-        res.send({
+        res.staus(201).send({
           message: "comment was deleted successfully!",
         });
       } else {
-        res.send({
+        res.status(404).send({
           message: `Cannot delete comment with id=${uuid}. Maybe post was not found!`,
         });
       }
