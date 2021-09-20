@@ -36,11 +36,6 @@
 * GET REQUEST
 
 
-#### Get all blog posts
-* https://gratis-blogsite.herokuapp.com/api/posts
-* GET REQUEST
-
-
 #### Get a blog post by id
 * https://gratis-blogsite.herokuapp.com/api/posts/64efe8c1-34d3-4dbd-91e3-793fa1af8e17
 * GET REQUEST
